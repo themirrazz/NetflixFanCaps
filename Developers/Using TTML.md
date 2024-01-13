@@ -5,6 +5,8 @@ We're going to show you an example of captions:
 ```xml
 <tt ttp:contentProfiles="http://www.w3.org/ns/ttml/profile/imsc1.1/text" ttp:tickRate="10000000" ttp:timeBase="media" xml:lang="en">
   <head>
+    <!-- change type to "CC" if including things like "[sad music plays]" or "[clattering]", "SUBS" if it's just a translation. -->
+    <!-- "CC" can also be used for translations that include sound effects -->
     <metadata nttm:movieID="XXXXXXXX" nttm:textType="SUBS" />
     <styling>
       <inital
