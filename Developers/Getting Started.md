@@ -25,12 +25,12 @@ I think all the properties are self-explanitory here, so let's move onto the nex
       {
          "id": "japanese-to-english",
          "title": "English (From Japanese)",
-         "file": "80155651/JTE.xml"
+         "file": "80155651/JTE.json"
       },
       {
          "id": "klingon",
          "title": "Klingon",
-         "file": "80155651/TLH.xml"
+         "file": "80155651/TLH.json"
       },
       ...
    ]
@@ -39,8 +39,6 @@ I think all the properties are self-explanitory here, so let's move onto the nex
 
 So, each id in the object is the "movie id" of the video, which is shown in the Netflix URL.
 For example, the URL of this id is [https://www.netflix.com/watch/80155651], which goes to Season 1 Ep 10 of Sonic Boom (Buster).
-All captions on Netflix use TTML, or Timed Text Markup Language - an XML-based caption format. You'll learn more in the next page.
-The id is so that the extension knows which fansubs to auto-choose, and the title is what the user actually sees when selecting the captions.
-The file is based on the root URL of the Fansub Repository, so for Klingon captions, it would be not `https://www.example.com/80155651/JTE.xml`, but `https://www.example.com/repo/80155651/JTE.xml`.
+We'll be using a custom JSON format, see next page. The file is based on the root URL of the Fansub Repository, so for Klingon captions, it would be not `https://www.example.com/80155651/JTE.json`, but `https://www.example.com/repo/80155651/JTE.json`.
 
 [Next Page: Using TTML](/Developers/Using%20TTML.md)
