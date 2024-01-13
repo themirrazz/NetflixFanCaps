@@ -13,32 +13,17 @@ The index.json file should look like this:
 {
    "name": "My repository",
    "description": "Description about your fansubs, optional",
-   "author": "Author, also optional"
-}
-```
-
-I think all the properties are self-explanitory here, so let's move onto the next JSON file: tracks.json. Here's an example:
-
-```json
-{
-   "80155651": [
+   "author": "Author, also optional",
+   "languages": [
       {
-         "id": "japanese-to-english",
-         "title": "English (From Japanese)",
-         "file": "80155651/JTE.json"
-      },
-      {
-         "id": "klingon",
-         "title": "Klingon",
-         "file": "80155651/TLH.json"
-      },
-      ...
+         "name": "English (From Japanese)",
+         "id": "en_ja"
+      }
    ]
 }
 ```
 
-So, each id in the object is the "movie id" of the video, which is shown in the Netflix URL.
-For example, the URL of this id is [https://www.netflix.com/watch/80155651], which goes to Season 1 Ep 10 of Sonic Boom (Buster).
-We'll be using a custom JSON format, see next page. The file is based on the root URL of the Fansub Repository, so for Klingon captions, it would be not `https://www.example.com/80155651/JTE.json`, but `https://www.example.com/repo/80155651/JTE.json`.
+The caption URL of files is formated as follows: `https://www.example.com/repo/80155651/en_ja.json`<br/>
+The number is the watch ID, which you can find when you open Netflix. For this ID, the URL is `https://www.netflix.com/watch/80155651`, which leads to Season 1 Episode 10 of Sonic Boom (Buster). The name of the JSON file is the the name of the id of the language.
 
 [Next Page: Using TTML](/Developers/Using%20TTML.md)
