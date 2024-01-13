@@ -7,8 +7,8 @@ Store the subtitles in a JSON file:
 [
   {
     "lines": [ "line 1 (required)", "line 2 (optional)" ],
-    "start": 000000,
-    "end": 0042500,
+    "start": 0,
+    "end": 42500,
     "lang": "en"
   }
 ]
