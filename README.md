@@ -35,3 +35,6 @@ It remembers this by a unique "type id", which the fansub create sets, as well a
 For example, if it was from a respository at "https://www.example.com/repository" and was id "spanish-to-french", it'd look for those subtitles before defaulting to "Fansubs Off".
 I made this by using the Inspect Element tool to view which HTML elements Netflix uses to show the subtitles and also the subtitles controls. 
 I am not using any of Netflix's code in the extension itself, because I do not intend to infringe Netflix' copyright with this extension. (Quite the contrary!)
+
+## For Fansub Creators
+Please see [Developers/Getting Started](Developers/Getting%20Started.md) on how to get started with fansub development.
