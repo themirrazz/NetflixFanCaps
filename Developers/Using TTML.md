@@ -1,7 +1,5 @@
 # Developers' Guide: Using NFS Subtitles Format
-For TTML, we're basing it off of how Netflix stores their captions for maximum compatibility.
-We're going to show you an example of captions:
-
+We use a custom JSON format for our files. We're going to show you an example of captions:
 Store the subtitles in a JSON file:
 ```json
 [
