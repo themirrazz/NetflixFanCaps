@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Fansubs for Netflix",
+    "version": "0.0.1",
+    "description": "Add fansubs to Netflix!",
+    "content_scripts": [
+        {
+            "matches": ["*://*.netflix.com/*"],
+            "js": ["fansubs-injector.js"]
+        }
+    ],
+    "permissions": [
+        "storage",
+        "activeTab",
+        "tabs",
+        "*://*.netflix.com/*",
+        "https://*/*",
+        "*://*.github.io/*",
+        "*://*.nflxvideo.net/*"
+    ]
+}
