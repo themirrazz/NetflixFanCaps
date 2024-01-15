@@ -300,14 +300,14 @@ function LoadSubtitles(url) {
 function GenerateSubtitleElement (sub) {
     var div = document.createElement('div');
     div.className = 'player-timedtext-text-container';
-    div.setAttribute('style',"display:block;white-space:nowrap;text-align:center;position:fixed;left:0%;width:100%;bottom:7%; overflow: auto;");
+    div.setAttribute('style',"display:block;white-space:nowrap;text-align:center;position:fixed;left:0%;width:100%;bottom:10%; overflow: auto;");
     /*var span0 = document.createElement('span');
     div.appendChild(span0);
     span0.setAttribute('style','display:inline-block;text-align:start');*/
     sub.lines.forEach(function (line) {
         var g = document.createElement('p');
         g.setAttribute('style',"margin:0px;margin-top:3px;margin-bottom:3px;font-size:26px;line-height:normal;font-weight:normal;color:#ffffff;text-shadow:#000000 0px 0px 7px;font-family:Netflix Sans,Helvetica Nueue,Helvetica,Arial,sans-serif;font-weight:bolder");
-        g.setAttribute('lang',sub.lang);
+        g.setAttribute('lang',sub.lang||'en');
         g.innerText = line;
         div.appendChild(g);
     });
