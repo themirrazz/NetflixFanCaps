@@ -13,3 +13,5 @@ Store the subtitles in a JSON file:
 ```
 
 Time is represented in milliseconds.
+
+(Note: omitting the language option defaults to "en", therefore - on English subtitles, you can safely remove this line)
